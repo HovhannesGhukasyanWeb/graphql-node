@@ -1,8 +1,6 @@
 import { ApolloServer, gql } from 'apollo-server';
 import mongoose from 'mongoose';
 import { configDotenv } from 'dotenv';
-import User from './models/User.js';
-import Post from './models/Post.js';
 import { getUsers, getUser, createUser, updateUser, deleteUser } from './controllers/UserController.js';
 import { createPost, deletePost, updatePost } from './controllers/PostController.js';
 
